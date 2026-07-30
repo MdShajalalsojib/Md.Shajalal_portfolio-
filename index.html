@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-circle"></div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-glow"></div>
+
+<!-- Scroll Progress Bar -->
+<div id="scrollProgress"></div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="nav-logo">Portfolio<span>.</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content reveal">
+    <div class="hero-img">
+      <img src="images/profile.jpg" alt="Profile">
+    </div>
+    <h4>👋 Hello, I'm</h4>
+    <h1>Your Name</h1>
+    <h2><span id="typed"></span><span class="cursor-blink">|</span></h2>
+    <p>A passionate Computer Science student who loves building clean, functional, and beautiful web experiences.</p>
+    <div class="hero-btns">
+      <a href="resume/resume.pdf" download class="btn btn-primary"><i class="fa-solid fa-download"></i> Download CV</a>
+      <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <h2 class="section-title reveal">About Me</h2>
+  <div class="about-grid">
+    <div class="about-img reveal">
+      <img src="images/profile.jpg" alt="About">
+    </div>
+    <div class="about-info reveal">
+      <h3>Who am I?</h3>
+      <p>I'm a dedicated Computer Science & Engineering student passionate about frontend development, UI/UX design and problem solving.</p>
+      <div class="info-grid">
+        <div><strong>Name:</strong> Your Name</div>
+        <div><strong>Education:</strong> B.Sc. in CSE</div>
+        <div><strong>Email:</strong> you@email.com</div>
+        <div><strong>Phone:</strong> +880 000 000 000</div>
+        <div><strong>Languages:</strong> English, Bangla</div>
+        <div><strong>Goal:</strong> Software Engineer</div>
+      </div>
+      <div class="hobbies">
+        <span>Coding</span><span>Reading</span><span>Gaming</span><span>Music</span>
+      </div>
+      <a href="resume/resume.pdf" download class="btn btn-primary">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section alt-bg">
+  <h2 class="section-title reveal">My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-circle reveal" data-percent="95">
+      <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"></circle><circle class="progress" cx="60" cy="60" r="54"></circle></svg>
+      <div class="skill-text"><span class="skill-percent">0%</span><p>HTML</p></div>
+    </div>
+    <div class="skill-circle reveal" data-percent="90">
+      <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"></circle><circle class="progress" cx="60" cy="60" r="54"></circle></svg>
+      <div class="skill-text"><span class="skill-percent">0%</span><p>CSS</p></div>
+    </div>
+    <div class="skill-circle reveal" data-percent="85">
+      <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"></circle><circle class="progress" cx="60" cy="60" r="54"></circle></svg>
+      <div class="skill-text"><span class="skill-percent">0%</span><p>JavaScript</p></div>
+    </div>
+    <div class="skill-circle reveal" data-percent="80">
+      <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"></circle><circle class="progress" cx="60" cy="60" r="54"></circle></svg>
+      <div class="skill-text"><span class="skill-percent">0%</span><p>C</p></div>
+    </div>
+    <div class="skill-circle reveal" data-percent="75">
+      <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"></circle><circle class="progress" cx="60" cy="60" r="54"></circle></svg>
+      <div class="skill-text"><span class="skill-percent">0%</span><p>Java</p></div>
+    </div>
+    <div class="skill-circle reveal" data-percent="70">
+      <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"></circle><circle class="progress" cx="60" cy="60" r="54"></circle></svg>
+      <div class="skill-text"><span class="skill-percent">0%</span><p>Python</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Education Timeline -->
+<section id="education" class="section">
+  <h2 class="section-title reveal">Education Timeline</h2>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="year">2020</span>
+        <h3>SSC</h3>
+        <p>Completed Secondary School Certificate with a strong foundation in science.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="year">2022</span>
+        <h3>HSC</h3>
+        <p>Completed Higher Secondary Certificate majoring in Science.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="year">2023 - Present</span>
+        <h3>B.Sc. in Computer Science & Engineering</h3>
+        <p>Currently studying CSE, focusing on web development and software engineering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section alt-bg">
+  <h2 class="section-title reveal">Featured Projects</h2>
+  <div class="filter-bar reveal">
+    <input type="text" id="projectSearch" placeholder="🔍 Search projects...">
+    <div class="filter-btns">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="app">App</button>
+      <button class="filter-btn" data-filter="system">System</button>
+    </div>
+  </div>
+  <div class="projects-grid" id="projectsGrid">
+
+    <div class="project-card reveal" data-category="system" data-title="Hospital Management System" data-desc="A complete system to manage patients, doctors, and appointments." data-tech="HTML, CSS, JavaScript, PHP">
+      <img src="images/project1.png" alt="Hospital Management System">
+      <div class="project-info">
+        <h3>Hospital Management System</h3>
+        <p>Manage patients, doctors & appointments efficiently.</p>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>PHP</span></div>
+        <div class="project-btns">
+          <a href="#" class="btn-small">Live Demo</a>
+          <a href="#" class="btn-small">GitHub</a>
+          <button class="btn-small view-details">Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-category="app" data-title="Weather App" data-desc="Real-time weather forecast app using a public weather API." data-tech="HTML, CSS, JavaScript, API">
+      <img src="images/project2.png" alt="Weather App">
+      <div class="project-info">
+        <h3>Weather App</h3>
+        <p>Real-time weather forecast using a public API.</p>
+        <div class="tech-tags"><span>JS</span><span>API</span></div>
+        <div class="project-btns">
+          <a href="#" class="btn-small">Live Demo</a>
+          <a href="#" class="btn-small">GitHub</a>
+          <button class="btn-small view-details">Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-category="app" data-title="Calculator" data-desc="A simple and elegant calculator built with vanilla JavaScript." data-tech="HTML, CSS, JavaScript">
+      <img src="images/project3.png" alt="Calculator">
+      <div class="project-info">
+        <h3>Calculator</h3>
+        <p>Simple, elegant calculator app.</p>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <div class="project-btns">
+          <a href="#" class="btn-small">Live Demo</a>
+          <a href="#" class="btn-small">GitHub</a>
+          <button class="btn-small view-details">Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-category="web" data-title="Quiz App" data-desc="Interactive quiz app with score tracking and timer." data-tech="HTML, CSS, JavaScript">
+      <img src="images/project4.png" alt="Quiz App">
+      <div class="project-info">
+        <h3>Quiz App</h3>
+        <p>Interactive quiz with score tracking & timer.</p>
+        <div class="tech-tags"><span>JS</span><span>CSS</span></div>
+        <div class="project-btns">
+          <a href="#" class="btn-small">Live Demo</a>
+          <a href="#" class="btn-small">GitHub</a>
+          <button class="btn-small view-details">Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-category="system" data-title="Student Result System" data-desc="Manage and calculate student results automatically." data-tech="HTML, CSS, JavaScript, PHP, MySQL">
+      <img src="images/project5.png" alt="Student Result System">
+      <div class="project-info">
+        <h3>Student Result System</h3>
+        <p>Manage & calculate student results automatically.</p>
+        <div class="tech-tags"><span>PHP</span><span>MySQL</span></div>
+        <div class="project-btns">
+          <a href="#" class="btn-small">Live Demo</a>
+          <a href="#" class="btn-small">GitHub</a>
+          <button class="btn-small view-details">Details</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-category="web" data-title="Portfolio Website" data-desc="This very portfolio website — fully responsive and animated." data-tech="HTML, CSS, JavaScript">
+      <img src="images/project6.png" alt="Portfolio Website">
+      <div class="project-info">
+        <h3>Portfolio Website</h3>
+        <p>Fully responsive personal portfolio website.</p>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <div class="project-btns">
+          <a href="#" class="btn-small">Live Demo</a>
+          <a href="#" class="btn-small">GitHub</a>
+          <button class="btn-small view-details">Details</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Project Details Popup -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-box">
+    <button class="popup-close" id="popupClose"><i class="fa-solid fa-xmark"></i></button>
+    <h3 id="popupTitle"></h3>
+    <p id="popupDesc"></p>
+    <p><strong>Technologies:</strong> <span id="popupTech"></span></p>
+  </div>
+</div>
+
+<!-- Certificates -->
+<section id="certificates" class="section">
+  <h2 class="section-title reveal">Certificates</h2>
+  <div class="cert-grid">
+    <div class="cert-card reveal">
+      <img src="images/certificate1.jpg" alt="Certificate" class="lightbox-img">
+      <div class="cert-info">
+        <h3>Web Development Bootcamp</h3>
+        <p>Udemy</p>
+        <button class="btn-small">View</button>
+      </div>
+    </div>
+    <div class="cert-card reveal">
+      <img src="images/certificate2.jpg" alt="Certificate" class="lightbox-img">
+      <div class="cert-info">
+        <h3>JavaScript Algorithms</h3>
+        <p>freeCodeCamp</p>
+        <button class="btn-small">View</button>
+      </div>
+    </div>
+    <div class="cert-card reveal">
+      <img src="images/certificate3.jpg" alt="Certificate" class="lightbox-img">
+      <div class="cert-info">
+        <h3>UI/UX Design Basics</h3>
+        <p>Coursera</p>
+        <button class="btn-small">View</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- Statistics -->
+<section class="stats-section alt-bg">
+  <div class="stats-grid">
+    <div class="stat-box reveal">
+      <h2 class="counter" data-target="10">0</h2><span>+</span>
+      <p>Projects</p>
+    </div>
+    <div class="stat-box reveal">
+      <h2 class="counter" data-target="5">0</h2><span>+</span>
+      <p>Certificates</p>
+    </div>
+    <div class="stat-box reveal">
+      <h2 class="counter" data-target="2">0</h2><span>+</span>
+      <p>Years Learning</p>
+    </div>
+    <div class="stat-box reveal">
+      <h2 class="counter" data-target="100">0</h2><span>+</span>
+      <p>Coding Problems</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section">
+  <h2 class="section-title reveal">Services</h2>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <i class="fa-solid fa-mobile-screen"></i>
+      <h3>Responsive Website</h3>
+      <p>Websites that look great on every screen size and device.</p>
+    </div>
+    <div class="service-card reveal">
+      <i class="fa-solid fa-code"></i>
+      <h3>Frontend Development</h3>
+      <p>Clean, efficient, and modern frontend code using best practices.</p>
+    </div>
+    <div class="service-card reveal">
+      <i class="fa-solid fa-palette"></i>
+      <h3>UI Design</h3>
+      <p>Modern, user-friendly interface designs that engage users.</p>
+    </div>
+    <div class="service-card reveal">
+      <i class="fa-solid fa-rocket"></i>
+      <h3>Landing Pages</h3>
+      <p>High-converting landing pages for products and personal brands.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="section alt-bg">
+  <h2 class="section-title reveal">Testimonials</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card reveal">
+      <p>"A dedicated and hardworking student with excellent problem-solving skills."</p>
+      <h4>— Mr. Rahman, Teacher</h4>
+    </div>
+    <div class="testimonial-card reveal">
+      <p>"Always willing to help classmates and explain difficult topics clearly."</p>
+      <h4>— Sadia, Classmate</h4>
+    </div>
+    <div class="testimonial-card reveal">
+      <p>"Impressive growth in frontend development skills over the past year."</p>
+      <h4>— Mr. Karim, Mentor</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <h2 class="section-title reveal">Contact Me</h2>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <h3>Let's talk</h3>
+      <p><i class="fa-solid fa-envelope"></i> you@email.com</p>
+      <p><i class="fa-solid fa-phone"></i> +880 000 000 000</p>
+      <p><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+    <form id="contactForm" class="contact-form reveal">
+      <div class="form-row">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-row">
+        <input type="tel" id="phone" placeholder="Your Phone">
+        <input type="text" id="subject" placeholder="Subject" required>
+      </div>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <span class="error-msg" id="formError"></span>
+      <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Portfolio<span>.</span></h3>
+      <p>Building modern web experiences one project at a time.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-envelope"></i> you@email.com</p>
+      <p><i class="fa-solid fa-phone"></i> +880 000 000 000</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Your Name. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
