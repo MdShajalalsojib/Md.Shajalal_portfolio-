@@ -170,57 +170,7 @@ Some of my featured projects include:
 Users can contact me through the contact form or social media platforms.
 
 ---
-
-# 📸 Screenshots
-
-## Home Page
-
-![Home](./assets/screenshots/home.png)
-
-## About Section
-
-![About](./assets/screenshots/about.png)
-
-## Skills
-
-![Skills](./assets/screenshots/skills.png)
-
-## Projects
-
-![Projects](./assets/screenshots/projects.png)
-
-## Contact
-
-![Contact](./assets/screenshots/contact.png)
-
----
-
-# 🚀 Getting Started
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/portfolio.git
-```
-
-### Navigate to Project
-
-```bash
-cd portfolio
-```
-
-### Open in Browser
-
-Simply open:
-
-```text
-index.html
-```
-
-or use VS Code Live Server.
-
----
-
+ 
 # 🎯 Future Improvements
 
 - Add Backend Contact Form
@@ -255,20 +205,9 @@ Problem Solver
 
 ---
 
-# ⭐ Support
-
-If you like this project, don't forget to give it a ⭐ on GitHub.
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
----
 
 <div align="center">
 
-Made with ❤️ by **MD. SHAJALAL**
+**MD. SHAJALAL**
 
 </div>
