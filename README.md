@@ -8,7 +8,7 @@
 
 A modern, responsive, and interactive personal portfolio website built using **HTML, CSS, and JavaScript** to showcase my skills, education, projects, certificates, and contact information.
 
-![Portfolio Preview](./assets/portfolio-preview.png)
+![Portfolio Preview](image/Photap.png)
 
 </div>
 
